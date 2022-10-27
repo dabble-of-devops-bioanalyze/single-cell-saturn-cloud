@@ -32,7 +32,7 @@ The Saturn Cloud UI is fairly self explanatory.
 
 * Customize your environment
 
-![Environment](./images/Screen Shot 2022-10-27 at 1.38.20 PM.png)
+![Environment](images/Screen Shot 2022-10-27 at 1.38.20 PM.png)
 
   * I went with the default saturn cloud datascience environemnt. If you're using tensorflow or pytorch you may want to choose those environments.
 * Add your System Packages of choice. I went for `htop tree vim build-essential`
