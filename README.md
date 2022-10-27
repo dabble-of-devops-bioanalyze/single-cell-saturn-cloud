@@ -77,6 +77,15 @@ You can grab the [scanpy tutorials](https://github.com/scverse/scanpy-tutorials)
 
 ```bash
 git clone https://github.com/scverse/scanpy-tutorials
+wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-saturn-cloud/main/excellxgene-environment.yaml
+wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-saturn-cloud/main/prepare.py
+wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-saturn-cloud/main/pbmc3k.ipynb
 ```
 
 I'm only going over the `pbmc3k.ipynb` notebook. It's supplied here because I made one very minor change, but all accolodes should go to the ScanPy team.
+
+
+## Resources
+* [Scanpy Tutorials](https://github.com/scverse/scanpy-tutorials)
+* [Scanpy](https://scanpy.readthedocs.io/)
+* [ExCellxGene](https://github.com/czbiohub/excellxgene)
