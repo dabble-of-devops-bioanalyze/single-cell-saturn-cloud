@@ -31,7 +31,9 @@ The Saturn Cloud UI is fairly self explanatory.
 ### Environment
 
 * Customize your environment
+
 ![Environment](./images/Screen Shot 2022-10-27 at 1.38.20 PM.png)
+
   * I went with the default saturn cloud datascience environemnt. If you're using tensorflow or pytorch you may want to choose those environments.
 * Add your System Packages of choice. I went for `htop tree vim build-essential`
 * Optional - Add your pip packages. `scanpy louvain quilt3[catalog,pyarrow]`
@@ -39,6 +41,7 @@ The Saturn Cloud UI is fairly self explanatory.
 * Open a Port for Web Applications
     * Click on the *Advanced Options* in the **Environment** tab in order to open a port.
     * This step is necessary if you want to follow along with the visualization portion of the tutorial!
+  
 ![Open Port](./images/Screen Shot 2022-10-27 at 1.38.31 PM.png)
 
 ## Review and Launch
