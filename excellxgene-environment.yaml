@@ -1,0 +1,16 @@
+name: excellxgene
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - python=3.8
+    - gcc 
+    - cxx-compiler
+    - papermill
+    - pip
+    - pip:
+        - excellxgene
+        - scanpy
+        - louvain
+        - quilt3[catalog,pyarrow]
