@@ -16,23 +16,23 @@ The Saturn Cloud UI is fairly self explanatory.
 ### Create a Resource
 
 * Create a new Python Server resource type.
-![Python Server](./images/Screen Shot 2022-10-27 at 1.47.08 PM.png)
+![Python Server](./images/Screen_Shot_2022-10-27_at_1.47.08_PM.png)
 
 ### Choose your Hardware Specs
 
 * Choose a CPU Instance Type
- ![CPU Example](./images/Screen Shot 2022-10-27 at 1.37.26 PM.png)
+ ![CPU Example](./images/Screen_Shot_2022-10-27_at_1.37.26_PM.png)
    (We're not doing anything here that requires a GPU.)
 * Choose your memory requirements
   * From the Size dropdown choose an instance type.
-![Memory 1](./images/Screen Shot 2022-10-27 at 1.47.47 PM.png)
-![Memory 2](./images/Screen Shot 2022-10-27 at 1.47.59 PM.png)
+![Memory 1](./images/Screen_Shot_2022-10-27_at_1.47.47_PM.png)
+![Memory 2](./images/Screen_Shot_2022-10-27_at_1.47.59_PM.png)
 
 ### Environment
 
 * Customize your environment
 
-![Environment](images/Screen Shot 2022-10-27 at 1.38.20 PM.png)
+![Environment](images/Screen_Shot_2022-10-27_at_1.38.20_PM.png)
 
   * I went with the default saturn cloud datascience environemnt. If you're using tensorflow or pytorch you may want to choose those environments.
 * Add your System Packages of choice. I went for `htop tree vim build-essential`
@@ -42,17 +42,17 @@ The Saturn Cloud UI is fairly self explanatory.
     * Click on the *Advanced Options* in the **Environment** tab in order to open a port.
     * This step is necessary if you want to follow along with the visualization portion of the tutorial!
   
-![Open Port](./images/Screen Shot 2022-10-27 at 1.38.31 PM.png)
+![Open Port](./images/Screen_Shot_2022-10-27_at_1.38.31_PM.png)
 
 ## Review and Launch
 
 * Once you've reviewed your settings click *Create* and you'll be ready to go.
 
-![Create](./images/Screen Shot 2022-10-27 at 1.49.54 PM.png)
+![Create](./images/Screen_Shot_2022-10-27_at_1.49.54_PM.png)
 
 On the next page press the *Start* button, and then the *JupyterLab* button.
 
-![Launch](./images/Screen Shot 2022-10-27 at 1.51.22 PM.png)
+![Launch](./images/Screen_Shot_2022-10-27_at 1.51.22_PM.png)
 
 ### Optional - ExcellxGene Setup
 
