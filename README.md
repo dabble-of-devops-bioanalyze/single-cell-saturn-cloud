@@ -58,18 +58,19 @@ On the next page press the *Start* button, and then the *JupyterLab* button.
 
 Excellxgene needs to be installed to it's own conda environment because it doesn't play nice with the existing conda env.
 
+* Grab the `excellxgene-environment.yaml` from this repo.
+* Create the excellxgene environment
+* Register the excellxgene environment as a Python Kernel.
+
+Setup is the same whether you are using Saturn Cloud, running locally, or using an HPC system.
+
 ```bash
+wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-saturn-cloud/main/excellxgene-environment.yaml
 mamba env create -f ./excellxgene-environment.yaml -p ~/.conda/envs/excellxgene
 source activate conda activate /home/jovyan/.conda/envs/excellxgene
 ```
 
-## Setup - Local
-
-* Grab the `excellxgene-environment.yaml` from this repo.
-
-```bash
-mamba env create -f ./excellxgene-environment.yaml
-```
+If you are running on a local system or [BioAnalyze HPC](https://hpc.bioanalyze.io) I recommend using [these](https://hpc.bioanalyze.io/software/install-software.html) settings.
 
 ## Data Analysis
 
@@ -82,8 +83,25 @@ wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-s
 wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-saturn-cloud/main/pbmc3k.ipynb
 ```
 
-I'm only going over the `pbmc3k.ipynb` notebook. It's supplied here because I made one very minor change, but all accolodes should go to the ScanPy team.
+I'm only going over the `pbmc3k.ipynb` notebook. It's supplied here because I made one very minor change, but all credit, accolodes, etc should go to the ScanPy team.
 
+From here, open up the `pbmc3k.ipynb` notebook in your Jupyterhub. Go to `Kernel` -> `Restart Kernel and Run all Cells`.
+
+This will run the entire notebook for you.
+
+## ExCellxGene
+
+Now that we have some data let's visualize some clusters!
+
+```bash
+git clone https://github.com/czbiohub/excellxgene
+cd excellxgene
+cd example-dataset 
+wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-saturn-cloud/main/prepare.py
+source activate excellxgene
+python ./prepare.py pbmc3k.h5ad --output ./pbmc3k-preprocessed.h5ad --overwrite
+
+```
 
 ## Resources
 * [Scanpy Tutorials](https://github.com/scverse/scanpy-tutorials)

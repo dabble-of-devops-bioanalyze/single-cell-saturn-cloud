@@ -1,5 +1,6 @@
 from os.path import expanduser, isdir, isfile, sep, splitext
 
+import os
 import click
 import pandas as pd
 from numpy import ndarray, unique
