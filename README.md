@@ -100,7 +100,7 @@ cd example-dataset
 wget https://raw.githubusercontent.com/dabble-of-devops-bioanalyze/single-cell-saturn-cloud/main/prepare.py
 source activate excellxgene
 python ./prepare.py pbmc3k.h5ad --output ./pbmc3k-preprocessed.h5ad --overwrite
-
+excellxgene launch --host 0.0.0.0 --port 8000
 ```
 
 ## Resources

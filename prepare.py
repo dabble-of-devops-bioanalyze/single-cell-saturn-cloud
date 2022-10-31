@@ -201,10 +201,10 @@ def prepare(
                 sc.pl.tsne(adata, color="louvain", palette=palette, save="_louvain")
 
     def write_csvs(data, adata):
-        results_dir = os.path.dirname(data)
+        results_dir = os.path.abspath(os.path.dirname(data))
         results_dir = results_dir.replace('.h5ad', '')
         os.makedirs(results_dir, exist_ok=True)
-        adata.write_csvs(results_file[:-5], )
+        adata.write_csvs(results_dir, )
 
     def show_step(item):
         if not skip_qc:
